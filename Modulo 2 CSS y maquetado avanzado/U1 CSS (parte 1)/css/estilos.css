@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif; */
+}
+
+/*--------------------- Encabezado ---------------------*/
+header{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 270px;
+    background: #444;
+}
+
+header #foto{
+    position: absolute;
+    width: 200px;
+    height: 257px;
+    background: rgb(168, 168, 168); 
+    margin: 5px 40px;
+    border-radius: 30px;
+    /* UNIDAD 2 */
+    box-shadow: 0px 0px 20px rgb(255, 253, 253);
+}
+
+header h1{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    /* background: rgb(168, 168, 168);  */
+    margin: 60px 30px 30px 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: rgb(218, 218, 218);
+    
+}
+
+header h3{
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    /* background: rgb(168, 168, 168);  */
+    margin: 150px 30px 30px 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: rgb(218, 218, 218);
+    font-family: 'Lobster', cursive
+}
+
+
+/*--------------------- Articulo ---------------------*/
+article{
+    position:relative ;
+    margin: auto;
+    width: 1000px;
+    height: 354px;
+    background: #444;
+}
+
+article #izq{
+float: left;
+width: 399px;
+height: 354px;
+background: rgb(165, 164, 164);
+padding: 20px;
+box-sizing: border-box;
+}
+
+article #izq ul li{
+    width: 178px;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article #izq h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article #der{
+    float: right;
+    width: 600px;
+    height: 354px;
+    background: rgb(226, 224, 224);
+    padding: 30px;
+    box-sizing: border-box;
+    columns: 2;
+    column-gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#der ul li{
+    margin: 10px;
+    font-size: 12px;
+}
+
+#der ol li{
+    list-style: decimal;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px; 
+    font-size: 12px;
+}
+
+/*--------------------- Footer ---------------------*/
+footer{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 67px;
+    background:  rgb(119, 118, 118);
+    text-align: center;
+    line-height: 67px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*================= estilos formulario =================*/
+
+section{
+    width: 100%;
+    height: 1000px;
+    background: rgb(90, 112, 133); 
+    padding-top: 30px;
+}
+
+#formulario{
+    width: 400px;
+    background: rgb(97, 173, 243);  
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#formulario h2{
+    text-align: center;
+}
+
+#navegacion {
+    width: 400px;
+    background:  rgb(97, 173, 243);  
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#navegacion a{
+  text-align: center;
+}
+
+.campos{
+    width: 250px;
+    border: 2px solid black;
+    padding: 3px;
+    margin: 0px 0px 3px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#enviar{
+    width: 100px;
+    height: 30px;
+    margin-left: 120px;
+}
+
+
+
+
+
+
+
+
