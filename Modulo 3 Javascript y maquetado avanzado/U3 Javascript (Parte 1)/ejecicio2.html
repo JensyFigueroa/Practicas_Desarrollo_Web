@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecicio 2</title>
+</head>
+<body>
+
+    <script>
+        let sizeArreglo = 0;
+        let arregloNumeros=[];
+        let numeroMayor=0;
+
+        while(isNaN(sizeArreglo=(parseInt(prompt('Introduzca el tamaño del arreglo de números y devuelva el mayor: '))))){
+        }
+
+        for (var i=0; i <= sizeArreglo - 1; i++){
+            var numero = 0;
+            i++;
+            while(isNaN(numero=(parseInt(prompt('Introduzca numero: ' +'('+ i + ' de ' + sizeArreglo+')'))))){
+            }
+
+            i--;
+            arregloNumeros.push(numero);
+
+            if(numeroMayor < arregloNumeros[i]){
+                numeroMayor=arregloNumeros[i];
+            }
+            
+        }    
+
+        for (var i=0; i <= arregloNumeros.length - 1; i++){
+            // document.write(arregloNumeros[i]);
+            document.write('<h3>'+arregloNumeros[i]+'</h3>');
+        }
+        document.write('<br>');
+
+        document.write('<h2 style="color: red;">El numero mayor es '+numeroMayor +'</h3>');
+
+        document.write('<h3><a href="index.html">Ir al inicio</a></h3>');
+        
+    </script>
+    
+</body>
+</html>
