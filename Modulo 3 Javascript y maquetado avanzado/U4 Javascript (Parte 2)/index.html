@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U4 Javascript (Parte 2)</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="fondo" id="body">
+
+    <div class="ejecicio1">
+        <h1>EJERCICIO 1</h1>
+        <h4>Haga clic un color para cambiar el fondo:</h4>
+        <div class="botones">
+            <button class="btn yellow" id="yellow">Yellow</button>
+            <button class="btn blue" id="blue">Blue</button>
+            <button class="btn red" id="red">Red</button>
+        </div>
+    </div>
+
+    <div class="ejecicio2">
+        <h1>EJECICIO 2</h1>
+        <h4>Contador de caracteres: <span id="cont"></span></h4>
+        <textarea id="caracteres" onkeyup="contar(this)" cols="25" rows="5"></textarea>
+    </div>
+
+    <div class="ejecicio3">
+        <h1>EJECICIO 3</h1>
+        <form>
+            <label><h4>Seleccione a los estudiantes con un tipo calificación:</h4></label>
+            <select id="tipoCalificacion" onchange="miFuncion()">
+                <option class="opcion"></option>
+                <option class="opcion">Aprobado</option>
+              <option class="opcion">Reprobado</option>
+            </select>
+        </form>
+        <br>
+
+        <div id="tabla"></div>
+    </div>
+          
+    <script>
+       
+/////////////EJERCICIO 1
+        var cambiarFondo = document.querySelector('body');
+        var btnColores = document.querySelectorAll('.btn');
+
+        btnColores.forEach(btn => btn.addEventListener('click', () => {
+        cambiarFondo.className = btn.classList[1]
+         }))
+
+/////////////EJERCICIO 2
+        var contador = document.querySelector('#cont');
+        var caracter = document.querySelector('#caracteres')
+        function contar(){
+            contador.innerHTML = caracter.value.length
+        }
+
+/////////////EJECICIO 3
+      var alumnos = [
+            {
+                nombre: 'Juan Gomez',
+                nota: 7
+            }, 
+            {
+                nombre: 'Pedro Rodriguez',
+                nota: 4
+            }, 
+            {
+                nombre: 'Roxana García',
+                nota: 8
+            }, 
+            {
+                nombre: 'Luciano Lopez',
+                nota: 5
+            }, 
+            {
+                nombre: 'Fernanda Gimenez',
+                nota: 6
+            }, 
+            {
+                nombre: 'Florencia Martinez',
+                nota: 10
+            }, 
+            {
+                nombre: 'Raul Sanchez',
+                nota: 7
+            }, 
+            {
+                nombre: 'Sandra Figueroa',
+                nota: 8
+            }
+        ];
+
+        
+        function miFuncion(){
+            var tipoCalificacion = document.getElementById('tipoCalificacion');
+            //  document.getElementById('text1').value=seleccion.selectedIndex;
+            var calificacion = tipoCalificacion.options[tipoCalificacion.selectedIndex].text;
+            
+            if (calificacion === 'Aprobado'){
+                // document.write('<table border="1" width=20%>'+'<tr>'+'<td width=%>Nombres y Apellidos</td>'+'<td width=30% align="center">Notas</td></tr></table>'); 
+                var html="<table border=1>";
+	                html+="<thead>";
+	                html+="<tr>";
+	                html+="<th> Nombres y Apellidos</th>";
+	                html+="<th colspan=2;> Notas </th></tr></thead>";
+                    html+="<tbody>"; 
+                    
+                 const aprobados = alumnos.filter(num => num.nota >= 7);
+                 for (var i=0; i <= aprobados.length - 1; i++){
+                      console.log(aprobados[i]);
+                    //  document.write('<table border="1" width=20%><tr><td>'+aprobados[i].nombre+'</td><td width=30% align="center">'+aprobados[i].nota+'</td></tr></table>');   
+                    html+="<tr><td>"+aprobados[i].nombre+"</td><td>"+aprobados[i].nota+"</td></tr>";
+                }
+
+                html+="</tbody>";
+                html+="</table>";
+                document.getElementById("tabla").innerHTML=html;
+            
+                }
+            
+           
+            if (calificacion === 'Reprobado'){
+                var html="<table border=1>";
+	                html+="<thead>";
+	                html+="<tr>";
+	                html+="<th> Nombres y Apellidos</th>";
+	                html+="<th colspan=2;> Notas </th></tr></thead>";
+                    html+="<tbody>"; 
+                    
+                const reprobados = alumnos.filter(num => num.nota < 7);
+                console.log(reprobados)
+                for (var i=0; i <= reprobados.length - 1; i++){
+                    html+="<tr><td>"+reprobados[i].nombre+"</td><td>"+reprobados[i].nota+"</td></tr>";
+                }
+                html+="</tbody>";
+                html+="</table>";
+                document.getElementById("tabla").innerHTML=html;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
