@@ -32,7 +32,7 @@ const Main = (props) => {
                 </ul>
             </div>
         </main>
-    )
+    );
 }
 
 export default Main;

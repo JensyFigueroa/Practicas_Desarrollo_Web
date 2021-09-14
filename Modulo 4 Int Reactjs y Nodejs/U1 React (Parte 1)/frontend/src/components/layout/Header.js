@@ -6,7 +6,7 @@ const Header = (props) => {
                 <h1>Recetas Faciles</h1>
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;
