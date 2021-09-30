@@ -1,0 +1,72 @@
+main{
+    position: relative;
+    background: #fb4b4e;
+    padding: 1em 0;
+    color: cornsilk;
+}
+
+main .holder img{
+width: 100%;
+}
+
+main .holder h2{
+    margin-bottom: 5px;
+}
+
+main .holder p{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.historia {
+    font-size: 0.9em; 
+} 
+
+.historia h2{
+    margin-bottom: 1em;
+}
+
+.personas{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.personas{
+    font-size: 0.8em;
+}
+
+.staff h2{
+    margin-bottom: 1em;
+}
+
+.persona{
+    width: 20%;
+    border: 2px solid gray;
+    border-radius: 0.25em;
+    /* float: left; */
+    margin-left: 2,25%;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 10px rgba(0,0,0);
+    text-align: center;
+    background-color: rgb(169, 169, 169,.5);
+    
+}
+
+.persona img{
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    margin: 0.8em 0 1em;
+    max-width: 80%;
+}
+
+.persona h4,h5{
+    text-align: center;
+    font-weight: normal;
+}
+
+.persona h5{
+    font-style: italic;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+.novedades h1{
+    text-align: center;
+}
+
+.novedad{
+    width: 90%;
+    margin: auto;
+}
+
+.novedad h3, h4, p{
+    margin-bottom: 10px;
+}
+
+.novedad hr{
+    margin-bottom: 40px;
+}
