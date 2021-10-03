@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Practicas_Desarrollo_Web/static/css/main.a235bd0a.chunk.css",
-    "main.js": "/Practicas_Desarrollo_Web/static/js/main.d22a421c.chunk.js",
-    "main.js.map": "/Practicas_Desarrollo_Web/static/js/main.d22a421c.chunk.js.map",
-    "runtime-main.js": "/Practicas_Desarrollo_Web/static/js/runtime-main.f776ec22.js",
-    "runtime-main.js.map": "/Practicas_Desarrollo_Web/static/js/runtime-main.f776ec22.js.map",
-    "static/js/2.a7da8bff.chunk.js": "/Practicas_Desarrollo_Web/static/js/2.a7da8bff.chunk.js",
-    "static/js/2.a7da8bff.chunk.js.map": "/Practicas_Desarrollo_Web/static/js/2.a7da8bff.chunk.js.map",
-    "static/js/3.adf6bf40.chunk.js": "/Practicas_Desarrollo_Web/static/js/3.adf6bf40.chunk.js",
-    "static/js/3.adf6bf40.chunk.js.map": "/Practicas_Desarrollo_Web/static/js/3.adf6bf40.chunk.js.map",
-    "index.html": "/Practicas_Desarrollo_Web/index.html",
-    "static/css/main.a235bd0a.chunk.css.map": "/Practicas_Desarrollo_Web/static/css/main.a235bd0a.chunk.css.map",
-    "static/js/2.a7da8bff.chunk.js.LICENSE.txt": "/Practicas_Desarrollo_Web/static/js/2.a7da8bff.chunk.js.LICENSE.txt"
+    "main.css": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/css/main.a235bd0a.chunk.css",
+    "main.js": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/main.d22a421c.chunk.js",
+    "main.js.map": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/main.d22a421c.chunk.js.map",
+    "runtime-main.js": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/runtime-main.c77ac6ae.js",
+    "runtime-main.js.map": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/runtime-main.c77ac6ae.js.map",
+    "static/js/2.a7da8bff.chunk.js": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/2.a7da8bff.chunk.js",
+    "static/js/2.a7da8bff.chunk.js.map": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/2.a7da8bff.chunk.js.map",
+    "static/js/3.adf6bf40.chunk.js": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/3.adf6bf40.chunk.js",
+    "static/js/3.adf6bf40.chunk.js.map": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/3.adf6bf40.chunk.js.map",
+    "index.html": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/index.html",
+    "static/css/main.a235bd0a.chunk.css.map": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/css/main.a235bd0a.chunk.css.map",
+    "static/js/2.a7da8bff.chunk.js.LICENSE.txt": "/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo%204%20Int%20Reactjs%20y%20Nodejs/U2%20React%20(Parte%202)/frontend/static/js/2.a7da8bff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f776ec22.js",
+    "static/js/runtime-main.c77ac6ae.js",
     "static/js/2.a7da8bff.chunk.js",
     "static/css/main.a235bd0a.chunk.css",
     "static/js/main.d22a421c.chunk.js"
