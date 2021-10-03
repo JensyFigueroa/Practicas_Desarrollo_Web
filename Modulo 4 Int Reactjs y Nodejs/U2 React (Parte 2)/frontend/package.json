@@ -1,8 +1,8 @@
 {
-  "homepage": "https://jensyfigueroa.github.io/Practicas_Desarrollo_Web/Practicas_Desarrollo_Web/Modulo 4 Int Reactjs y Nodejs/U2 React (Parte 2)/frontend/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jensyfigueroa.github.io/Practicas_Desarrollo_Web",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
