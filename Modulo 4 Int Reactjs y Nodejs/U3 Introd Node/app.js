@@ -7,11 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-// Tarea Unidad 3: Introducción NODE
-var pageServicio = require('./routes/servicios')
-var pageNosotros = require('./routes/nosotros')
-var pageContacto = require('./routes/contacto')
-
+//*************Tarea Unidad 3: Introducción NODE
+var pageNosotros = require('./routes/nosotros');
+var pageServicios = require('./routes/servicios'); 
+var pageContacto = require('./routes/contacto');
 
 var app = express();
 
@@ -28,10 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// Tarea Unidad 3: Introducción NODE
-app.get('/servicios', pageServicio);
-app.get('/contacto', pageContacto);
+//*************Tarea Unidad 3: Introducción NODE
 app.get('/nosotros', pageNosotros);
+app.get('/servicios', pageServicios);
+app.get('/contacto',pageContacto);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -49,7 +49,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
 module.exports = app;
-
-
