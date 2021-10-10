@@ -1,0 +1,13 @@
+<main>
+    <div class="holder">
+        <h2>Inicio de session con Express</h2>
+
+        <h3>{{title}}</h3>
+
+        {{#unless conocido}}
+            <form action="/ingresar" method="POST">
+                <input type="text" name="nombre"><button>Ingresar</button>
+            </form>
+        {{/unless}}
+    </div>
+</main>
