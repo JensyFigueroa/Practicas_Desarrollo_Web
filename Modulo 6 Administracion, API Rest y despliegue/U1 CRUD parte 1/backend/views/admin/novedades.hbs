@@ -1,20 +1,26 @@
-
 <div class="container" style="margin-top: 30px;">
     <div class="row">
-        <p class="text-end">Hola {{usuario}} !<a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesión <i
-                    class="fas fa-sign-out-alt"></i></a></p>
+        <p class="text-end">Hola
+            {{usuario}}
+            !   <a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesión
+                <i class="fas fa-sign-out-alt"></i></a></p>
     </div>
-    <hr>
+    <hr />
 
+{{!-------------- 1.- se maquetamos el listado de novedades en el mismo container
+y crear en la carpeta model el archivo novedadesModel.js para hacer la consulta 
+y traer los datos.
+--------------}}
     <div class="row">
         <div class="col-7">
             <h3>Listado de Novedades</h3>
         </div>
         <div class="col-5 text-end">
-            <a class="btn btn-success" href=""><i class="fa fa-plus" aria-hidden="false"> Nuevo</i></a>
+            {{!-- -------- 8.- Alta de novedades y agregamos el GET en routes/admin/novedades.js -------- --}}
+            <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hidden="false"> Nuevo</i></a>
         </div>
     </div>
-    <hr>
+    <hr/>
 
     <div class="row">
         <div class="col">
@@ -22,25 +28,29 @@
                 <thead>
                     <tr class="table-dark">
                         <th scope="col">#</th>
-                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-center">Titulo</th>
                         <th class="text-end">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
+                    {{!-- -------- 7.- Recorremos la propiedad novedades que viene de novedades.js
+                        y colocamos id y el titulo -------- --}}
+                    {{#each novedades}}
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Titulo</td>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
                         <td class="text-end">
                             <a class="btn btn-secondary" href=""><i class="fas fa-pencil-alt"></i></a>
-                            <a href="" class="btn btn-secondary"><i class="fa fa-trash" aria-hidden="true"></i></a>                            
-                        </td>                        
+                            <a href="" class="btn btn-secondary"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
                     </tr>
+                    {{/each}}
                 </tbody>
             </table>
         </div>
     </div>
 
-    {{!-- <div class="row">
+    {{! <div class="row">
         <main>
             <div class="novedades">
                 <h1>Novedades</h1>
@@ -78,5 +88,10 @@
                 </div>
             </div>
         </main>
-    </div> --}}
+    </div> }}
 </div>
+
+
+
+
+
