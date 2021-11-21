@@ -1,0 +1,65 @@
+.recetas h1{
+    margin: 1em 5em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.receta {
+    border: 1px solid cornsilk;
+    border-radius: 0.7em;
+    margin: 2em 1em;
+    padding: 2em;
+    overflow: hidden;
+    position: relative;
+}
+
+.receta h3{
+    margin-bottom: 10px;
+}
+
+.receta ul {
+    list-style: none;
+    margin: 15px 0 10px 20px;
+}
+
+.receta p{
+    width: 74%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.receta:nth-child(even) img{
+    border-radius: 0.8em;
+    float: right;   
+}
+
+
+.receta:nth-child(even) h2{
+    border-radius: 0.8em;
+    margin: 0 0 10px 0;
+}
+
+.receta:nth-child(odd) h2{
+    margin: 0 0 10px 350px;
+    text-align: left;
+}
+
+.receta:nth-child(odd) img{
+    border-radius: 0.8em;
+    float: left; 
+    margin-top: 45px; 
+    margin-left: 0; 
+}
+
+.receta:nth-child(odd) ul{
+    margin-left: 350px;
+    text-align: left;
+}
+
+.receta:nth-child(odd) h3{
+    margin-left: 350px;
+}
+
+.receta:nth-child(odd) p{
+    margin-left: 365px;
+}
