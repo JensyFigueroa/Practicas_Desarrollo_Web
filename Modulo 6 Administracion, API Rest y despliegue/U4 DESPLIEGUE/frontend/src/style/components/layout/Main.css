@@ -1,0 +1,58 @@
+main{
+    position: relative;
+    background: #fb4b4e;
+    padding: 1em 0;
+    color: cornsilk;
+}
+
+main .holder img{
+width: 100%;
+}
+
+main .holder h2{
+    margin-bottom: 5px;
+}
+
+main .holder p{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.bloque-categorias{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categorias li{
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+.categoria:hover{
+    background-color: rgba(200,200,200,.5) ;
+}
+
+.categoria img {
+    width: 90%;
+    margin: auto;
+    display: block;
+    transform: scale(0.9);
+    transition: all 1s ease;
+}
+
+.categoria:hover img{
+    transform: scale(1);
+}
+
+.holder{
+    width: 1000px;
+    margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+header{
+    position: relative;
+    background-color: #7C0B2B;
+    padding: 2.5em 0;
+}
+
+header img{
+    margin-top: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+header h1{
+    color: white;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+    font-size: 50px;
+}

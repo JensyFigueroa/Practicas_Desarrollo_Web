@@ -1,0 +1,78 @@
+.columnas{
+    display: flex;
+    justify-content: center;
+}
+
+.columnas .left{
+    width: 50%;
+    border-right: 1px solid cornsilk;
+}
+.columnas .right{
+    margin-left: 20px;
+}
+
+
+.columnas.left{
+    border-right: 2px solid cornsilk;
+    margin-left: px;
+}
+
+.columnas.left h2{
+    margin-bottom: 10px;
+}
+
+.columnas.right {
+    vertical-align: top;
+    /* margin-left: 20px; */
+}
+
+.columnas.right p{
+    font-size: 0.9em;
+}
+
+.columnas .right ul li a i{
+    text-decoration: none;
+    color: cornsilk;
+} 
+
+.columnas .right ul li a {
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-left: 10px;
+    color: cornsilk;
+    font-family: 'Merienda', cursive ,'Tangerine', cursive;
+} 
+
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
+.formulario input, textarea{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #999 ;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario input[type="submit"]{
+    background-color: #D10000; 
+    box-shadow: 0 0 10px rgba(0 0 0,0.4);
+    color: white;
+    font-size: 1em;
+    width: 100px;
+    cursor: pointer;   
+}
+
+.formulario textarea{
+    height: 10em;
+    resize: none;
+}
+
+.formulario .acciones{
+    text-align: center;
+}

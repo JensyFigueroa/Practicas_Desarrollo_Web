@@ -1,0 +1,66 @@
+nav{
+    background-color: #D10000;  
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    line-height: 40px;
+    display: inline-block;
+    width: 16%;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: cornsilk;
+    text-align: center;    
+}
+
+.menu li:hover{
+    background-color: #e4284e;
+    border-radius: 5px;
+    border-style: none;
+    z-index: 1;
+}
+
+nav div ul li a.activo{
+    box-sizing: border-box;
+    background-color: #e4284e;
+    box-shadow: 1px 1px 3px 3px rgba(255, 159, 159);
+    border-radius: 5px;
+}
+
+/********** SUBMENU **********/
+.submenu {
+    position: absolute;
+    background-color: #e4284e;
+    width: 100%;
+    visibility: hidden;  
+}
+
+.submenu  li{
+    display: block;   
+    border-radius: 0%;
+    background-color: #e4284e;
+}
+
+.submenu a{
+    margin-left: px;
+    text-decoration: none;
+    color: cornsilk;
+    text-align: left; 
+}
+
+.menu li:hover .submenu li{
+    visibility: visible;
+}
+.submenu li:hover{
+    display: block;
+    background-color:  #D10000; 
+    box-shadow: 1px 1px 3px 3px rgba(255, 159, 159);
+    transition: a 3s ease;
+}

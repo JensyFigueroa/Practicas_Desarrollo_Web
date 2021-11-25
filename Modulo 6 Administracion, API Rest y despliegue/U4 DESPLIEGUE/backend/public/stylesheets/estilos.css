@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: 'Merienda', cursive ,'Tangerine', cursive;
+}
+
+/* --------------------- CABECERA --------------------- */
+header{
+    position: relative;
+    background-color: #7C0B2B;
+    padding: 2.5em 0;
+}
+
+header img{
+    margin-top: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+header h1{
+    color: white;
+    font-weight: 100;
+    display: inline-block;
+    /* position: relative; */
+    bottom: 30px;
+    font-size: 50px;
+}
+
+/* ---------------------BOTONES DE NAVEGACION --------------------- */
+nav{
+    background-color: #D10000;  
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    line-height: 40px;
+    display: inline-block;
+    width: 16%;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: cornsilk;
+    text-align: center;    
+}
+
+.menu li:hover{
+    background-color: #e4284e;
+    border-radius: 5px;
+    border-style: none;
+    z-index: 1;
+}
+
+nav div ul li a.activo{
+    box-sizing: border-box;
+    background-color: #e4284e;
+    box-shadow: 1px 1px 3px 3px rgba(255, 159, 159);
+    border-radius: 5px;
+}
+
+/********** SUBMENU **********/
+.submenu {
+    position: absolute;
+    background-color: #e4284e;
+    width: 100%;
+    visibility: hidden;  
+}
+
+.submenu  li{
+    display: block;   
+    border-radius: 0%;
+    background-color: #e4284e;
+}
+
+.submenu a{
+    margin-left: px;
+    text-decoration: none;
+    color: cornsilk;
+    text-align: left; 
+}
+
+.menu li:hover .submenu li{
+    visibility: visible;
+}
+.submenu li:hover{
+    display: block;
+    background-color:  #D10000; 
+    box-shadow: 1px 1px 3px 3px rgba(255, 159, 159);
+    transition: a 3s ease;
+}
+/* --------------------- PRINCIPAL --------------------- */
+main{
+    position: relative;
+    background: #fb4b4e;
+    padding: 1em 0;
+    color: cornsilk;
+}
+
+main .holder img{
+width: 100%;
+}
+
+main .holder h2{
+    margin-bottom: 5px;
+}
+
+main .holder p{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.bloque-categorias{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categorias li{
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+.categoria:hover{
+    background-color: rgba(200,200,200,.5) ;
+}
+
+.categoria img {
+    width: 90%;
+    margin: auto;
+    display: block;
+    transform: scale(0.9);
+    transition: all 1s ease;
+}
+
+.categoria:hover img{
+    transform: scale(1);
+}
+
+.holder{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* --------------------- NOSOTROS --------------------- */
+
+.historia {
+    font-size: 0.9em; 
+} 
+
+.historia h2{
+    margin-bottom: 1em;
+}
+
+.personas{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.personas{
+    font-size: 0.8em;
+}
+
+.staff h2{
+    margin-bottom: 1em;
+}
+
+.persona{
+    width: 20%;
+    border: 2px solid gray;
+    border-radius: 0.25em;
+    /* float: left; */
+    margin-left: 2,25%;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 10px rgba(0,0,0);
+    text-align: center;
+    background-color: rgb(169, 169, 169,.5);
+    
+}
+
+.persona img{
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    margin: 0.8em 0 1em;
+    max-width: 80%;
+}
+
+.persona h4,h5{
+    text-align: center;
+    font-weight: normal;
+}
+
+.persona h5{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* --------------------- RECETAS --------------------- */
+.recetas h1{
+    margin: 1em 5em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.receta {
+    border: 1px solid cornsilk;
+    border-radius: 0.7em;
+    margin: 2em 1em;
+    padding: 2em;
+    overflow: hidden;
+    position: relative;
+}
+
+.receta h3{
+    margin-bottom: 10px;
+}
+
+.receta ul {
+    list-style: none;
+    margin: 15px 0 10px 20px;
+}
+
+.receta p{
+    width: 74%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.receta:nth-child(even) img{
+    border-radius: 0.8em;
+    float: right;   
+}
+
+
+.receta:nth-child(even) h2{
+    border-radius: 0.8em;
+    margin: 0 0 10px 0;
+}
+
+.receta:nth-child(odd) h2{
+    margin: 0 0 10px 350px;
+    text-align: left;
+}
+
+.receta:nth-child(odd) img{
+    border-radius: 0.8em;
+    float: left; 
+    margin-top: 45px; 
+    margin-left: 0; 
+}
+
+.receta:nth-child(odd) ul{
+    margin-left: 350px;
+    text-align: left;
+}
+
+.receta:nth-child(odd) h3{
+    margin-left: 350px;
+}
+
+.receta:nth-child(odd) p{
+    margin-left: 365px;
+}
+
+/* --------------------- GALERIAS --------------------- */
+.galeria h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.galeria .foto{
+    display: inline-flex;
+    width: 20%;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+}
+
+.galeria .foto:nth-child(even){
+    margin-left: 65px;
+}
+
+/* --------------------- GALERIAS --------------------- */
+.novedades h1{
+    text-align: center;
+}
+
+.novedad{
+    width: 90%;
+    margin: auto;
+}
+
+.novedad h3, h4, p{
+    margin-bottom: 10px;
+}
+
+.novedad hr{
+    margin-bottom: 40px;
+}
+
+/* --------------------- CONTACTO --------------------- */
+
+.columnas{
+    display: flex;
+    justify-content: center;
+}
+
+.columnas .left{
+    width: 50%;
+    border-right: 1px solid cornsilk;
+}
+.columnas .right{
+    margin-left: 20px;
+}
+
+
+.columnas.left{
+    border-right: 2px solid cornsilk;
+    margin-left: px;
+}
+
+.columnas.left h2{
+    margin-bottom: 10px;
+}
+
+.columnas.right {
+    vertical-align: top;
+    /* margin-left: 20px; */
+}
+
+.columnas.right p{
+    font-size: 0.9em;
+}
+
+.columnas .right ul li a i{
+    text-decoration: none;
+    color: cornsilk;
+} 
+
+.columnas .right ul li a i span{
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-left: 10px;
+    color: cornsilk;
+    font-family: 'Merienda', cursive ,'Tangerine', cursive;
+} 
+
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
+.formulario input, textarea{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #999 ;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+}
+
+.formulario input[type="submit"]{
+    background-color: #D10000; 
+    box-shadow: 0 0 10px rgba(0 0 0,0.4);
+    color: white;
+    font-size: 1em;
+    width: 100px;
+    cursor: pointer;   
+}
+
+.formulario textarea{
+    height: 10em;
+    resize: none;
+}
+
+.formulario .acciones{
+    text-align: center;
+}
+
+
+
+/* --------------------- FOOTER --------------------- */
+footer{
+    position: relative;
+    background: #3E000C;
+    padding: 3em 0;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+
+
